@@ -12,7 +12,7 @@
   "author": "r0mflip",
   "main": "index.js",
   "scripts": {
-    "test": "eslint -c index.js index.js test.js"
+    "test": "eslint -c index.js index.js"
   },
   "peerDependencies": {
     "eslint": ">=3"
