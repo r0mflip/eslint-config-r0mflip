@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-r0mflip",
+  "version": "0.1.0",
+  "description": "r0mflip's eslint config",
+  "keywords": [
+    "eslint",
+    "eslint config",
+    "style",
+    "validate",
+    "config"
+  ],
+  "author": "r0mflip",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint -c index.js index.js test.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.5.0"
+  }
+}
