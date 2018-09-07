@@ -60,7 +60,7 @@ module.exports = {
     // 'class-methods-use-this': 0,
     // 'complexity': 0,
     'consistent-return': 2,
-    curly: [2, 'multi', 'consistent'],
+    curly: 2,
     // 'default-case': 0,
     'dot-location': [2, 'property'],
     // 'dot-notation': 0,
@@ -145,6 +145,7 @@ module.exports = {
     'no-unused-vars': [2, {
       vars: 'all',
       args: 'after-used',
+      ignoreRestSiblings: true,
       argsIgnorePattern: '(^reject$|^_$)',
       varsIgnorePattern: '(^_$)',
     }],
