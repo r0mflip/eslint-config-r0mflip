@@ -1,7 +1,31 @@
 {
   "name": "eslint-config-r0mflip",
   "version": "0.1.2",
+  "author": "r0mflip",
   "description": "r0mflip's eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r0mflip/eslint-config-r0mflip.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=3"
+  },
   "keywords": [
     "eslint",
     "linting",
@@ -9,25 +33,5 @@
     "validate",
     "config",
     "ram"
-  ],
-  "author": "r0mflip",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test/test.js"
-  },
-  "peerDependencies": {
-    "eslint": ">=3"
-  },
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "^5.5.0",
-    "tap-spec": "^5.0.0",
-    "tape": "^4.9.1"
-  },
-  "dependencies": {
-    "babel-eslint": "^9.0.0"
-  }
+  ]
 }
