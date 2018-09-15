@@ -1,13 +1,14 @@
 {
   "name": "eslint-config-r0mflip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "r0mflip's eslint config",
   "keywords": [
     "eslint",
-    "eslint config",
+    "linting",
     "style",
     "validate",
-    "config"
+    "config",
+    "ram"
   ],
   "author": "r0mflip",
   "main": "index.js",
@@ -25,5 +26,8 @@
     "eslint": "^5.5.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "babel-eslint": "^9.0.0"
   }
 }

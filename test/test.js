@@ -46,6 +46,15 @@ test('Pass files all checked', t => {
 test('Pass cases count', t => {
   t.equal(passReport.warningCount, 0, 'Warnings === 0');
   t.equal(passReport.errorCount, 0, 'Errors === 0');
+  passReport.results.forEach((r, i1) => {
+    const filePath = r.filePath.replace(process.cwd(), '');
+    r.messages.forEach((m, i2) => {
+      t.fail(
+        `Err: (${i1+i2+1}) ${m.message} (${m.ruleId}) \
+        (${filePath})[${m.line}, ${m.column}]`
+      );
+    });
+  });
   t.end();
 });
 
