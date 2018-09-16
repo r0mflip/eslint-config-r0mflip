@@ -72,7 +72,9 @@ test('Fail files all checked', t => {
 });
 
 test('Fail cases count', t => {
-  const expectingErrors = 15;
+  // keeps changing
+  const expectingErrors = 18;
+
   t.equal(failReport.warningCount, 0, 'Warnings === 0');
   t.equal(failReport.errorCount, expectingErrors, `Errors === ${expectingErrors}`);
 

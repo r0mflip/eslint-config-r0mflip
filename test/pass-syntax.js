@@ -19,3 +19,15 @@ const shame = {
 
 
 // end of empty lines
+
+// curly test
+if (shame !== undefined) {
+  shame.open = true;
+}
+
+// curly test 2
+if (shame !== undefined) {
+  shame.open = true;
+} else {
+  shame.open = false;
+}
