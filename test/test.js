@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env node
 
 /* eslint-env es6 */
 
