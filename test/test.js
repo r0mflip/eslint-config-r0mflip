@@ -2,6 +2,8 @@
 
 /* eslint-env es6 */
 
+const path = require('path');
+
 const eslint = require('eslint');
 const conf = require('../index.js');
 
@@ -37,7 +39,7 @@ const passReport = new eslint.CLIEngine(eslintOpts).executeOnFiles(passFiles);
 test('Pass files all checked', t => {
   passFiles.forEach((file, index) => {
     const result = passReport.results[index];
-    t.ok(result.filePath.endsWith(file), file);
+    t.equal(path.resolve(result.filePath), path.resolve(file), file);
   });
 
   t.end();
@@ -65,7 +67,7 @@ const failReport = new eslint.CLIEngine(eslintOpts).executeOnFiles(failFiles);
 test('Fail files all checked', t => {
   failFiles.forEach((file, index) => {
     const result = failReport.results[index];
-    t.ok(result.filePath.endsWith(file), file);
+    t.equal(path.resolve(result.filePath), path.resolve(file), file);
   });
 
   t.end();
