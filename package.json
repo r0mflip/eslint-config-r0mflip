@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-r0mflip",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "r0mflip",
   "description": "r0mflip's eslint config",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "node test/test.js"
   },
   "engines": {
-    "node": ">=8.10.0"
+    "node": "^8.10.0 || >=9.10.0"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,9 @@
     "babel-eslint": "^10.0.1"
   },
   "devDependencies": {
-    "eslint": "^5.12.0",
+    "eslint": "^5.13.0",
     "tap-spec": "^5.0.0",
-    "tape": "^4.9.2"
+    "tape": "^4.10.0"
   },
   "peerDependencies": {
     "eslint": ">=5"
