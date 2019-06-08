@@ -1,12 +1,17 @@
 {
   "name": "eslint-config-r0mflip",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "r0mflip",
   "description": "r0mflip's eslint config",
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js"
   },
+  "files": [
+    "index.js",
+    "LICENCE",
+    "README.md"
+  ],
   "engines": {
     "node": ">=10.9.0"
   },
