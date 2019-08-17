@@ -15,7 +15,5 @@ jobs:
         node-version: ${{matrix.node_version}}
     - name: Run npm test
       run: |
-        node --version
-        npm --version
         npm install
         npm test
