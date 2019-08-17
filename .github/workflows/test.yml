@@ -1,24 +1,23 @@
-name: Run tests
-on: [push, pull_request]
+name: Tests
+on: [push]
 jobs:
   test:
-    name: Test on node ${{matrix.node_version}} and ${{matrix.os}}
+    name: node@${{matrix.node_version}} and ${{matrix.os}}
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        node_version: [8.x, 10.x, 12.x]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        node_version: [10.x, 12.x]
+        os: [ubuntu-18.04, windows-2019]
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node@v ${{matrix.node_version}}
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v1
       with:
         node-version: ${{matrix.node_version}}
-    - name: Conf debug
+    - name: Setup env
       run: |
         node --version
         npm --version
+        npm install
     - name: npm test
       run: |
-        npm install
         npm test
