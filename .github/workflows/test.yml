@@ -10,7 +10,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node@v${{matrix.node_version}}
+    - name: Use Node@v ${{matrix.node_version}}
       uses: actions/setup-node@v1
       with:
         node-version: ${{matrix.node_version}}
